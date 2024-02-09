@@ -36,3 +36,96 @@
     transform: rotate(360deg);
   }
 }
+
+div#root {
+  width: 100%;
+  max-width: 1140px;
+  margin: auto;
+  display: flex;
+}
+.sidebar {
+  flex: 0 0 25%;
+}
+.area {
+  flex: 0 0 75%
+}
+nav li {
+  list-style-type: none;
+  border-top: 1px solid #ddd;
+  text-align: center;
+  transition: .6s ease-in-out;
+}
+nav a {
+  color: #000;
+  text-decoration: none;
+  display: block;
+  padding: 12px 0;
+  transition: .6s ease-in-out;
+}
+nav ul {
+  padding: 0;
+  border: 1px solid #ddd;
+}
+nav li:hover a {
+  background: #dddd;
+}
+.content-area {
+  width: 100%;
+  flex: 0 0 75%;
+  padding: 0 50px;
+}
+.todoForm input {
+  width: 250px;
+  height: 40px;
+  padding: 0 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+}
+.todoForm button {
+  display: inline-block;
+  width: 170px;
+  height: 40px;
+  margin: 31px 0 0;
+  background: #000;
+  border: 1px solid #000;
+  cursor: pointer;
+  transition: .6s ease-in-out;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.todoForm button:hover {
+  background: #fff;
+  color: #000;
+}
+.todoText ul li {
+  list-style-type: none;
+  font-size: 16px;
+  display: block;
+  clear: both;
+  border-bottom: 1px solid #ddd;
+  padding: 12px 20px;
+}
+.todoText ul li:nth-child(2n) {
+  background: #ddd;
+}
+.todoText ul {
+  padding: 0;
+  max-width: 443px;
+  border: 1px solid #ddd;
+}
+.todoText ul li button {
+  float: right;
+  color: #f00;
+  border: 0;
+  background: transparent;
+  font-weight: bold;
+  cursor: pointer;
+}
