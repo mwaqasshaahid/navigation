@@ -44,7 +44,7 @@ function Todo() {
       <div className='todoText'>
         <ul>
         {taskList.map((task, index) => (
-          <li key={index}>{task} <button onClick={handleDeleteTask}>X</button></li>
+          <li key={index}>{task} <button onClick={ () => handleDeleteTask(index)} >X</button></li>
         ))}
         </ul>
       </div>
